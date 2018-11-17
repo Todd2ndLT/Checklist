@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Checklist</string>
+    <!--Login-->
+    <string name="login_user">Нэр:</string>
+    <string name="login_email">Имейл:</string>
+    <string name="login_password">Нууц үг:</string>
+    <string name="login_button">Нэвтрэх</string>
+    <string name="login_forgot"><u>Нууц үгээ сэргээх</u></string>
+    <string name="login_signup"><u>Бүртгүүлэх</u></string>
+    <string name="login_error">Таны имейл/нууц үг буруу байна.</string>
+    <!--Signup-->
+    <string name="signup_email">Имейл:</string>
+    <string name="signup_password">Нууц үг:</string>
+    <string name="signup_lname">Овог:</string>
+    <string name="signup_fname">Нэр:</string>
+    <string name="signup_position">Албан тушаал:</string>
+    <string name="signup_phone">Утас:</string>
+    <string name="signup_signature_label">Баталгаат гарын үсэг:</string>
+    <string name="signup_buttonOK">OK</string>
+    <!--Add/choose location-->
+    <string name="location_label">Байршил</string>
+    <string name="location_button_add">Нэмэх</string>
+    <!--Add/choose level-->
+    <string name="level_label">Давхар</string>
+    <string name="level_button_add">Нэмэх</string>
+    <!--Add/choose category-->
+    <string name="category_label">Ангилал</string>
+    <string name="category_button_add">Нэмэх</string>
+    <!--Add/choose list-->
+    <string name="list_label">Зүйлс</string>
+    <string name="list_button_add">Нэмэх</string>
+    <!--Add Checking item-->
+    <string-array name="check_list_location">
+        <item>Байршил...</item>
+        <item>Zaisan Hill</item>
+        <item>Zaisan Square</item>
+        <item>Хийд</item>
+    </string-array>
+    <string-array name="check_list_level">
+        <item>Давхар...</item>
+    </string-array>
+    <string-array name="check_list_category">
+        <item>Ангилал...</item>
+    </string-array>
+    <string-array name="check_list_list">
+        <item>Зүйлс...</item>
+    </string-array>
+
+</resources>
