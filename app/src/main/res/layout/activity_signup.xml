@@ -124,9 +124,20 @@
                 />
         </LinearLayout>
     </GridLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:text="Алдаа гарлаа, та дахин шалгана уу!"
+        app:layout_constraintTop_toBottomOf="@id/signup_layoutMiddle"
+        />
     <Button
         android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_height="25dp"
         android:text="@string/signup_buttonOK"
         android:layout_marginTop="5dp"
         android:layout_marginRight="30dp"
