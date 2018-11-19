@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-
     >
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -18,6 +17,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         >
 
+        <android.support.v4.widget.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
         <EditText
             android:id="@+id/var_login_user"
             android:layout_width="match_parent"
@@ -36,32 +40,29 @@
             android:hint="@string/login_password"
             android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/var_login_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/login_button"
-            android:backgroundTint="@color/colorPrimaryLight"
-            android:textColor="#FFFFFF"
-            />
-
         <TextView
             android:id="@+id/var_login_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/var_login_button"
-            tools:text="@string/login_error" />
+            android:text="@string/login_error" />
+
+        <Button
+            android:id="@+id/var_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/var_login_forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:gravity="right"
-            tools:text="@string/login_forgot"
-            app:layout_constraintTop_toBottomOf="@id/var_login_error"
+            android:text="@string/login_forgot"
+            android:layout_gravity="right"
             android:textSize="14sp"
             android:textColor="@color/colorPrimary"/>
 
@@ -70,10 +71,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            tools:text="@string/login_signup"
-            android:gravity="center"
+            android:text="@string/login_signup"
+            android:textAllCaps="true"
             android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/var_login_signup"
+            android:layout_gravity="center"
             android:textColor="@color/colorPrimary"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
