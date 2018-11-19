@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,8 +12,10 @@
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         >
 
         <EditText
@@ -31,36 +34,39 @@
             android:inputType="textPassword"
             android:autofillHints="@string/login_password"
             android:hint="@string/login_password"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_button"
+            android:backgroundTint="@color/colorPrimaryLight"
+            android:textColor="#FFFFFF"
             />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
+            android:textSize="14sp"
             tools:text="@string/login_error" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="right"
             tools:text="@string/login_forgot"
-            android:textAllCaps="false"
+            android:textSize="14sp"
             android:textColor="@color/colorPrimary"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             tools:text="@string/login_signup"
             android:gravity="center"
-            android:textAllCaps="false"
+            android:textSize="18sp"
             android:textColor="@color/colorPrimary"/>
     </LinearLayout>
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
