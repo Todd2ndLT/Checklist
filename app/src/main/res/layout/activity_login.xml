@@ -19,7 +19,7 @@
         >
 
         <EditText
-            android:id="@+id/login_user"
+            android:id="@+id/var_login_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -28,7 +28,7 @@
             android:textSize="16sp"/>
 
         <EditText
-            android:id="@+id/login_password"
+            android:id="@+id/var_login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -37,6 +37,7 @@
             android:textSize="16sp" />
 
         <Button
+            android:id="@+id/var_login_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/login_button"
@@ -45,28 +46,34 @@
             />
 
         <TextView
+            android:id="@+id/var_login_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
             android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/var_login_button"
             tools:text="@string/login_error" />
 
         <TextView
+            android:id="@+id/var_login_forgot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="right"
             tools:text="@string/login_forgot"
+            app:layout_constraintTop_toBottomOf="@id/var_login_error"
             android:textSize="14sp"
             android:textColor="@color/colorPrimary"/>
 
         <TextView
+            android:id="@+id/var_login_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             tools:text="@string/login_signup"
             android:gravity="center"
             android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/var_login_signup"
             android:textColor="@color/colorPrimary"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
