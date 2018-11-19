@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:theme="@style/AppThemeBar"
     >
 
     <!--Login info-->
@@ -15,22 +17,26 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
-        android:background="@drawable/shape"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нэвтрэх"
+            android:textSize="16sp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:autofillHints="@string/signup_email"
             android:hint="@string/signup_email" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:autofillHints="@string/signup_password"
             android:hint="@string/signup_password" />
     </LinearLayout>
@@ -43,11 +49,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/signup_layoutTop"
         android:layout_marginTop="10dp"
-        android:background="@drawable/shape"
         android:columnCount="2"
-        android:rowCount="2"
+        android:rowCount="3"
         >
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Бусад"
+            android:layout_columnSpan="2"
+            android:textSize="16sp"/>
         <ImageView
             android:id="@+id/signup_image"
             android:layout_width="120dp"
@@ -67,7 +77,7 @@
                 android:autofillHints="@string/signup_lname"
                 android:hint="@string/signup_lname"
                 android:inputType="text"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
             <EditText
                 android:layout_marginLeft="5dp"
                 android:layout_width="match_parent"
@@ -75,7 +85,7 @@
                 android:inputType="text"
                 android:autofillHints="@string/signup_fname"
                 android:hint="@string/signup_fname"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
             <EditText
                 android:layout_marginLeft="5dp"
                 android:layout_width="match_parent"
@@ -83,7 +93,7 @@
                 android:inputType="text"
                 android:autofillHints="@string/signup_phone"
                 android:hint="@string/signup_phone"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,13 +107,14 @@
                 android:inputType="text"
                 android:autofillHints="@string/signup_position"
                 android:hint="@string/signup_position"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/signup_signature_label"
-                android:layout_marginLeft="5dp"/>
+                android:layout_marginLeft="5dp"
+                android:textSize="16sp"/>
             <LinearLayout
                 android:id="@+id/signup_signature"
                 android:layout_width="match_parent"
@@ -114,11 +125,15 @@
         </LinearLayout>
     </GridLayout>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
         android:text="@string/signup_buttonOK"
         android:layout_marginTop="5dp"
         android:layout_marginRight="30dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signup_layoutMiddle"/>
+        app:layout_constraintTop_toBottomOf="@id/signup_layoutMiddle"
+        android:background="@drawable/ic_shape_pill"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:textColor="#FFFFFF"
+        />
 </android.support.constraint.ConstraintLayout>

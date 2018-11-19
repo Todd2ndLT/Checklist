@@ -16,7 +16,7 @@
     <string name="signup_position">Албан тушаал:</string>
     <string name="signup_phone">Утас:</string>
     <string name="signup_signature_label">Баталгаат гарын үсэг:</string>
-    <string name="signup_buttonOK">OK</string>
+    <string name="signup_buttonOK">Бүртгүүлэх</string>
     <!--Add/choose location-->
     <string name="location_label">Байршил</string>
     <string name="location_button_add">Нэмэх</string>
