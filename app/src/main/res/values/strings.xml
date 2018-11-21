@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Checklist</string>
+    <string name="app_name_long">Maintenance Checklist</string>
     <!--Login-->
     <string name="login_user">Нэр:</string>
     <string name="login_email">Имейл:</string>
@@ -45,5 +46,8 @@
     <string-array name="check_list_list">
         <item>Зүйлс...</item>
     </string-array>
-
+    <!--Drawer Menu-->
+    <string name="drawer_checklist_add">Нэмэх</string>
+    <string name="drawer_checklist_check">Шалгах</string>
+    <string name="drawer_checklist_report">Тайлан</string>
 </resources>

@@ -3,5 +3,19 @@
     <group
         android:id="@+id/drawer_menus"
         android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu_checklist_add"
+            android:icon="@drawable/ic_icon_add"
+            android:title="@string/drawer_checklist_add" />
+        <item
+            android:id="@+id/drawer_menu_checklist_check"
+            android:icon="@drawable/ic_icon_inspect"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/drawer_checklist_add" />
+        <item
+            android:id="@+id/drawer_menu_checklist_report"
+            android:icon="@drawable/ic_icon_report"
+            android:iconTint="@color/colorPrimary"
+            android:title="@string/drawer_checklist_add" />
     </group>
 </menu>
