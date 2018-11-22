@@ -23,16 +23,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.ic_drawer_menu);*/
+        actionbar.setHomeAsUpIndicator(R.drawable.ic_drawer_menu);
         //SETTING MENUS
-        /*layoutDrawer = (DrawerLayout) findViewById(R.id.view_main_layout);
+        layoutDrawer = (DrawerLayout) findViewById(R.id.view_main_layout);
         lSideMenu = findViewById(R.id.view_main_menu);
         lSideMenu.setNavigationItemSelectedListener(this);
-        sideMenu = (Menu) lSideMenu.getMenu();*/
+        sideMenu = (Menu) lSideMenu.getMenu();
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

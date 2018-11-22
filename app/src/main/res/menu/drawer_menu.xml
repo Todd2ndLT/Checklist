@@ -10,12 +10,10 @@
         <item
             android:id="@+id/drawer_menu_checklist_check"
             android:icon="@drawable/ic_icon_inspect"
-            android:iconTint="@color/colorPrimary"
-            android:title="@string/drawer_checklist_add" />
+            android:title="@string/drawer_checklist_check" />
         <item
             android:id="@+id/drawer_menu_checklist_report"
             android:icon="@drawable/ic_icon_report"
-            android:iconTint="@color/colorPrimary"
-            android:title="@string/drawer_checklist_add" />
+            android:title="@string/drawer_checklist_report" />
     </group>
 </menu>
