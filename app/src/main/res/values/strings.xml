@@ -51,7 +51,7 @@
     <string name="drawer_checklist_check">Шалгах</string>
     <string name="drawer_checklist_report">Тайлан</string>
     <!--Drawer Menu 2-->
-    <string name="drawer_checklist_location">Байршиил</string>
+    <string name="drawer_checklist_location">Байршил</string>
     <string name="drawer_checklist_level">Давхар</string>
     <string name="drawer_checklist_category">Ангилал</string>
     <string name="drawer_checklist_list">Зүйлс</string>
