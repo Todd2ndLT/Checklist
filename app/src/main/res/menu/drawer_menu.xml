@@ -16,4 +16,32 @@
             android:icon="@drawable/ic_icon_report"
             android:title="@string/drawer_checklist_report" />
     </group>
+    <group
+        android:id="@+id/drawer_hierarchy"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu_checklist_add_location"
+            android:icon="@drawable/ic_icon_location"
+            android:title="@string/drawer_checklist_location" />
+        <item
+            android:id="@+id/drawer_menu_checklist_add_level"
+            android:icon="@drawable/ic_icon_level"
+            android:title="@string/drawer_checklist_level" />
+        <item
+            android:id="@+id/drawer_menu_checklist_add_category"
+            android:icon="@drawable/ic_icon_category"
+            android:title="@string/drawer_checklist_category" />
+        <item
+            android:id="@+id/drawer_menu_checklist_add_list"
+            android:icon="@drawable/ic_icon_list"
+            android:title="@string/drawer_checklist_list" />
+    </group>
+    <group
+        android:id="@+id/drawer_action"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu_logout"
+            android:icon="@drawable/ic_icon_logout"
+            android:title="@string/drawer_logout" />
+    </group>
 </menu>

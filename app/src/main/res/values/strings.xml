@@ -46,8 +46,15 @@
     <string-array name="check_list_list">
         <item>Зүйлс...</item>
     </string-array>
-    <!--Drawer Menu-->
+    <!--Drawer Menu 1-->
     <string name="drawer_checklist_add">Нэмэх</string>
     <string name="drawer_checklist_check">Шалгах</string>
     <string name="drawer_checklist_report">Тайлан</string>
+    <!--Drawer Menu 2-->
+    <string name="drawer_checklist_location">Байршиил</string>
+    <string name="drawer_checklist_level">Давхар</string>
+    <string name="drawer_checklist_category">Ангилал</string>
+    <string name="drawer_checklist_list">Зүйлс</string>
+    <!--Drawer Menu 3-->
+    <string name="drawer_logout">Гарах</string>
 </resources>
