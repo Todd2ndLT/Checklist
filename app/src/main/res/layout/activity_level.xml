@@ -46,6 +46,7 @@
             android:fastScrollEnabled="true"
             android:textFilterEnabled="true"
             android:clickable="true">
+
         </ListView>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

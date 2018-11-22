@@ -19,35 +19,14 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:theme="@style/AppTheme.AppBarOverlay" />
-        <ListView
+        <ScrollView
             android:id="@+id/view_main_content"
-            android:layout_marginTop="?attr/actionBarSize"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:background="@color/colorAccent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            >
-            <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="320dp"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:scrollbars="horizontal|vertical"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/location_layoutTop"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="hello"/>
-            </LinearLayout>-->
-        </ListView>
+            android:orientation="vertical"
+            android:layout_marginTop="?attr/actionBarSize">
+        </ScrollView>
     </FrameLayout>
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->

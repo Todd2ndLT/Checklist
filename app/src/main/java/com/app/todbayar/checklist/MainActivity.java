@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Debug;
 import android.support.annotation.NonNull;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ScrollView;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout layoutDrawer;
     private NavigationView lSideMenu;
     private Menu sideMenu;
-    private ListView layoutMainContent;
+    private ScrollView layoutMainContent;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,10 +44,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         lSideMenu = findViewById(R.id.view_main_menu);
         lSideMenu.setNavigationItemSelectedListener(this);
         sideMenu = (Menu) lSideMenu.getMenu();
-        //SETTING MAIN CONTENT LAYOUT
-        layoutMainContent = (ListView) findViewById(R.id.view_main_content);
-        layoutMainContent.setFastScrollEnabled(true);
-        layoutMainContent.setTextFilterEnabled(true);
+        //SETTING MAIN LAYOUT
+        layoutMainContent = (ScrollView) findViewById(R.id.view_main_content);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -89,10 +89,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void showLayoutInMainActivity(int resource){
+        layoutMainContent.removeAllViews();
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         //View viewAction = inflater.inflate(R.layout.activity_search_add, null);
-        //View viewList = inflater.inflate(resource, null);
+        View viewList = inflater.inflate(R.layout.activity_category, null);
         //layoutMainContent.addView(viewAction);
-        //layoutMainContent.addView(viewList);
+        layoutMainContent.addView(viewList);
     }
 }
