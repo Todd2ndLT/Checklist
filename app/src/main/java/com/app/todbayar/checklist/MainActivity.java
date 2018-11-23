@@ -1,8 +1,7 @@
 package com.app.todbayar.checklist;
 
-import android.content.Context;
-import android.os.Debug;
 import android.support.annotation.NonNull;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -12,22 +11,24 @@ import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.ScrollView;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    //============================
+    //          OTHER
+    //============================
     private Toolbar toolbar;
     private DrawerLayout layoutDrawer;
     private NavigationView lSideMenu;
     private Menu sideMenu;
-    private ScrollView layoutMainContent;
+    //============================
+    //          FRAGMENT
+    //============================
+    private ViewPager vPager;
+    private FragHierarchy fragHier;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,7 +46,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         lSideMenu.setNavigationItemSelectedListener(this);
         sideMenu = (Menu) lSideMenu.getMenu();
         //SETTING MAIN LAYOUT
-        layoutMainContent = (ScrollView) findViewById(R.id.view_main_content);
+        FragAdapter fragAdapter = new FragAdapter(getSupportFragmentManager(),this);
+        fragHier = new FragHierarchy();
+        fragAdapter.addFragment(fragHier, "Hierarchy");
+        vPager = (ViewPager) findViewById(R.id.view_main_content);
+        vPager.setAdapter(fragAdapter);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -70,16 +75,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Log.d("Debug", "menu checklist report");
                 break;
             case R.id.drawer_menu_checklist_add_location:
-                showLayoutInMainActivity(R.layout.activity_location);
+                //showLayoutInMainActivity(R.layout.activity_location);
                 break;
             case R.id.drawer_menu_checklist_add_level:
-                showLayoutInMainActivity(R.layout.activity_level);
+                //showLayoutInMainActivity(R.layout.activity_level);
                 break;
             case R.id.drawer_menu_checklist_add_category:
-                showLayoutInMainActivity(R.layout.activity_category);
+                //showLayoutInMainActivity(R.layout.activity_category);
                 break;
             case R.id.drawer_menu_checklist_add_list:
-                showLayoutInMainActivity(R.layout.activity_list);
+                //showLayoutInMainActivity(R.layout.activity_hierarchy_list);
                 break;
             case R.id.drawer_menu_logout:
                 Log.d("Debug", "menu logout");
@@ -89,11 +94,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void showLayoutInMainActivity(int resource){
-        layoutMainContent.removeAllViews();
-        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        //View viewAction = inflater.inflate(R.layout.activity_search_add, null);
-        View viewList = inflater.inflate(R.layout.activity_category, null);
+        //layoutMainContent.removeAllViews();
+        //LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        //View viewAction = inflater.inflate(R.layout.activity_hierarchy, null);
+        //View viewList = inflater.inflate(R.layout.activity_category, null);
         //layoutMainContent.addView(viewAction);
-        layoutMainContent.addView(viewList);
+        //layoutMainContent.addView(viewList);
+
     }
 }
