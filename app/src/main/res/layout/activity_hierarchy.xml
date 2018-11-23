@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:iconifiedByDefault="false"
         android:queryHint="Хайх"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
     <Button
         android:id="@+id/var_hierarchy_add"
         android:layout_width="30dp"
@@ -27,15 +27,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignTop="@id/var_hierarchy_search"
-        android:layout_marginTop="50dp"
-        android:background="@color/colorAccent">
-        <!--<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Todd MatrixNeo" />
-        </LinearLayout>-->
+        android:layout_marginTop="50dp">
     </ListView>
 </RelativeLayout>

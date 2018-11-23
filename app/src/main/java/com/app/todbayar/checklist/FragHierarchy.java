@@ -36,6 +36,22 @@ public class FragHierarchy extends Fragment {
         list.add("4");
         list.add("5");
         list.add("6");
+        list.add("Hello");
+        list.add("World");
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        list.add("6");
+        list.add("Hello");
+        list.add("World");
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+        list.add("6");
         listView_List = new FragHierarchy_List(getActivity(), list, "OK");
         listView.setAdapter(listView_List);
     }

@@ -1,10 +1,13 @@
 package com.app.todbayar.checklist;
 
 import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -41,7 +44,8 @@ public class FragHierarchy_List extends BaseAdapter {
     @Override
     public View getView(int position, View container, ViewGroup parent) {
         container = inflater.inflate(R.layout.activity_hierarchy_list, parent, false);
-        container.setTag("Hello world");
+        TextView text = (TextView) container.findViewById(R.id.var_hierarchy_list_items_text);
+        text.setText(listData.get(position));
         return container;
     }
 }
