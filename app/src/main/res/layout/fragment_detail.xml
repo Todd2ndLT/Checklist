@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <!--Hierarchy-->
+        <LinearLayout
+            android:id="@+id/view_detail_hierarchy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.pchmn.materialchips.ChipView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:deletable="true"
+                app:deleteIconColor="@color/colorPrimaryDark"
+                app:label="Zaisan Hill"
+                />
+            <com.pchmn.materialchips.ChipView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:deletable="true"
+                app:deleteIconColor="@color/colorPrimaryDark"
+                app:label="2F"
+                />
+            <com.pchmn.materialchips.ChipView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:deletable="true"
+                app:deleteIconColor="@color/colorPrimaryDark"
+                app:label="Information Technology"
+                />
+            <com.pchmn.materialchips.ChipView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:deletable="true"
+                app:deleteIconColor="@color/colorPrimaryDark"
+                app:label="Camera"
+                />
+            <com.pchmn.materialchips.ChipView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:labelColor="@android:color/white"
+                app:backgroundColor="@color/colorAccent"
+                app:label="Шатлал"
+                />
+        </LinearLayout>
+        <!--Detail-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_detail_hierarchy"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Өнөөдөр 2018/12/02 14:07"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 долоо хоног бүр Даваа, Мягмар гарагт 13:45-д 2018-12-25 хүртэл"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:textSize="16sp"
+                android:text="Камерийн ажиллагааг шалгах 1. Дэлгэцэнд гарч байгаа эсэх, 2. Камер дээр тог байгаа эсэх" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Хэвийн" />
+                <RadioButton android:id="@+id/radio_no"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Доголдолтой" />
+            </RadioGroup>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:textSize="16sp"
+                android:hint="Тайлбар" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шалгасан түүх"/>
+            <ListView
+                android:id="@+id/var_detail_list"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Оруулах"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

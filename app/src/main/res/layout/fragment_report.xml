@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <GridLayout
+            android:id="@+id/view_report_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018/12/2 15:16"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_shape_pill"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/white"
+                android:text="Цагалбар"/>
+        </GridLayout>
+        <ExpandableListView
+            android:id="@+id/var_report_list"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/view_report_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:divider="@color/colorCloseChip"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:scrollbars="none"
+            android:groupIndicator="@drawable/ic_icon_expand" />
+    </RelativeLayout>
+</ScrollView>

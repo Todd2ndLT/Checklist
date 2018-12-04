@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+            <!--Hierarchy-->
+            <LinearLayout
+                android:id="@+id/view_add_hierarchy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.pchmn.materialchips.ChipView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:deletable="true"
+                    app:deleteIconColor="@color/colorPrimaryDark"
+                    app:label="Zaisan Hill"
+                    />
+                <com.pchmn.materialchips.ChipView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:deletable="true"
+                    app:deleteIconColor="@color/colorPrimaryDark"
+                    app:label="2F"
+                    />
+                <com.pchmn.materialchips.ChipView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:deletable="true"
+                    app:deleteIconColor="@color/colorPrimaryDark"
+                    app:label="Information Technology"
+                    />
+                <com.pchmn.materialchips.ChipView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    app:labelColor="@android:color/white"
+                    app:backgroundColor="@color/colorAccent"
+                    app:label="Шатлал"
+                    />
+            </LinearLayout>
+            <!--Detail-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/view_add_hierarchy">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:hint="Зүйлийн гарчиг"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:drawableStart="@drawable/ic_icon_photo_add"
+                    android:background="@drawable/ic_shape_pill"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:paddingStart="10dp"
+                    android:text="Зураг"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:background="@drawable/ic_icon_photo"
+                            android:backgroundTint="@color/colorCloseChip" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </HorizontalScrollView>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|left"
+                    android:singleLine="false"
+                    android:textSize="16sp"
+                    android:hint="Тайлбар" />
+                <com.pchmn.materialchips.ChipsInput
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCloseChip"
+                    app:chip_labelColor="@color/white"
+                    app:chip_hasAvatarIcon="true"
+                    app:chip_backgroundColor="@color/colorFBColor"
+                    app:chip_deletable="true"
+                    app:hint="Хариуцах хүн" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Шалгах давтамж"/>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="16sp"
+                        android:hint="Тоо"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="долоо хоног бүр"/>
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:columnCount="4">
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Даваа" />
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Мягмар" />
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Лхагва" />
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Пүрэв" />
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Баасан" />
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Бямба" />
+                    <com.pchmn.materialchips.ChipView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        app:label="Ням" />
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Цаг:"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="time"
+                        android:textSize="16sp"
+                        android:hint="13:45"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Эхлэх:"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:textSize="16sp"
+                        android:hint="12/1/2018"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Дуусах:"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:textSize="16sp"
+                        android:hint="12/1/2018"/>
+                </GridLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:text="Нэмэх"/>
+            </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

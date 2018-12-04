@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_hierarchy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SearchView
+        android:id="@+id/var_hierarchy_search"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="Хайх"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/var_hierarchy_add"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_icon_add"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignLeft="@id/var_hierarchy_search"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="10dp"/>
+    <ListView
+        android:id="@+id/var_hierarchy_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/var_hierarchy_search"
+        android:scrollbars="vertical"
+        android:layout_marginTop="50dp">
+    </ListView>
+</RelativeLayout>
