@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     //============================
     private ViewPager vPager;
     private FragHierarchy fragHier;
+    private FragAdd fragAdd;
+    private FragDetail fragDetail;
+    private FragReport fragReport;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,8 +50,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         sideMenu = (Menu) lSideMenu.getMenu();
         //SETTING MAIN LAYOUT
         FragAdapter fragAdapter = new FragAdapter(getSupportFragmentManager(),this);
-        fragHier = new FragHierarchy();
+        //---------------------------------------------
+        /*fragHier = new FragHierarchy();
         fragAdapter.addFragment(fragHier, "Hierarchy");
+        fragAdd = new FragAdd();
+        fragAdapter.addFragment(fragAdd, "Add");*/
+        fragDetail = new FragDetail();
+        fragAdapter.addFragment(fragDetail, "Detail");
+        /*fragReport = new FragReport();
+        fragAdapter.addFragment(fragReport, "Report");*/
+        //---------------------------------------------
         vPager = (ViewPager) findViewById(R.id.view_main_content);
         vPager.setAdapter(fragAdapter);
     }
@@ -84,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //showLayoutInMainActivity(R.layout.activity_category);
                 break;
             case R.id.drawer_menu_checklist_add_list:
-                //showLayoutInMainActivity(R.layout.activity_hierarchy_list);
+                //showLayoutInMainActivity(R.layout.fragment_hierarchy_list);
                 break;
             case R.id.drawer_menu_logout:
                 Log.d("Debug", "menu logout");
@@ -96,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void showLayoutInMainActivity(int resource){
         //layoutMainContent.removeAllViews();
         //LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        //View viewAction = inflater.inflate(R.layout.activity_hierarchy, null);
+        //View viewAction = inflater.inflate(R.layout.fragment_hierarchy, null);
         //View viewList = inflater.inflate(R.layout.activity_category, null);
         //layoutMainContent.addView(viewAction);
         //layoutMainContent.addView(viewList);

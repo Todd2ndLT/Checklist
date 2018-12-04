@@ -58,7 +58,7 @@ public class FragHierarchy extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        fragView = inflater.inflate(R.layout.activity_hierarchy, container, false);
+        fragView = inflater.inflate(R.layout.fragment_hierarchy, container, false);
         return fragView;
     }
 }
